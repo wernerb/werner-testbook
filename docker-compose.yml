@@ -1,0 +1,8 @@
+version: "3.2"
+services:
+  db:
+    image: timvancann/databricks-cli:latest
+    volumes: 
+      - type: bind 
+        source: .
+        target: /mount
